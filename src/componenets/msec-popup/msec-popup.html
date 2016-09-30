@@ -1,0 +1,33 @@
+<link rel="import" href="../../lib/bower_components/polymer/polymer.html">
+<link rel="import" href="../../lib/bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../lib/bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="../../lib/bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../lib/bower_components/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../../lib/bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../lib/bower_components/paper-icon-button/paper-icon-button.html">
+<dom-module id="msec-popup">
+    <!-- Defines the element's style and local DOM -->
+    <template>
+    <link is="custom-style" rel="stylesheet" type="text/css" href="msec-popup.css">
+
+    <paper-header-panel class="flex">
+        <paper-toolbar>
+          <div class="mtitle">
+            <div>MSeconds - Load files from disk</div>
+            <paper-toggle-button class="mwhite">Enable/Disable</paper-toggle-button>
+          </div>
+
+
+        </paper-toolbar>
+    </paper-header-panel>
+
+    <paper-input  class="minput"  label="Filter URL" id="newURL" required auto-validate  error-message="enter valid url">
+      <div prefix class="mblue">&#187;</div>
+      <paper-icon-button  onclick="clearInput()" icon="clear" alt="clear" title="clear">Clear
+      </paper-icon-button>
+    </paper-input>
+    <paper-button toggles raised title="Add URL" on-click="addURL" >&#10011; Add URL</paper-button>
+
+  </template>
+    <script src="msec-popup.js"></script>
+</dom-module>

@@ -1,0 +1,24 @@
+
+paper-toggle-button {
+  --paper-toggle-button-label-color : white;
+}
+
+
+.mtitle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 5px !important;
+}
+
+.minput{
+  width: 70%;
+ margin-top: 2%;
+ margin-left: 10%;
+ display: inline-block;
+}
+
+.mblue {
+      color: #4A148C;
+      font-size: 35px !important;
+}
